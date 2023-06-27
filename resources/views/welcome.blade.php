@@ -28,7 +28,7 @@
                     
                     <div class="d-flex align-items-center p-3 m-2">
                         <div>
-                            <img src="{{$info['img']}}">
+                            <img src="{{ Vite::asset($info['img']) }}">
                         </div>
                         <div class="align-self-center ms-3">
                             <p>{{ $info['text'] }}</p>
