@@ -1,15 +1,25 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container my-3">
-    <h1>Welcome Page</h1>
-    <div class="row g-4">
-        <div class="col">
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, delectus ad esse illum omnis earum eligendi sint a minus quasi, inventore nulla autem. Maxime voluptatem eligendi veniam voluptates. Soluta, sunt!</p>
-            </div>
-        </div>
-    </div>
 
-</div>
+    <main class="bg-dark">
+
+        <div class="jumbotron"></div>
+
+        <section id="cards" class="customBox d-flex flex-wrap text-white pt-5 position-relative">
+            <h4 class="py-1 px-3 text-white bg-primary position-absolute top-0 start-0 translate-middle ms-5">CURRENT SERIES</h4>
+
+            @foreach ($movies as $movie)
+                
+                <div class="col-2 p-2">
+                    <img src="{{$movie['thumb']}}">
+                    <h6>{{ $movie['series'] }}</h6>
+                </div>
+
+            @endforeach
+
+            <button class="align-self-center py-1 px-5 text-white bg-primary mx-auto mb-4"> Load More </button>
+        </section>
+    </main>
+
 @endsection
