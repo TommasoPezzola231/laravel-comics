@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $navElements = config('store.navbarElements');
     $movies = config('comics');
-    return view('welcome', compact('navElements'), compact('movies'));
+    $infoList = config('store.infoList');
+    return view('welcome', compact('navElements', 'movies', 'infoList'));
 });
 
 Route::get('/otherpage', function () {

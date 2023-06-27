@@ -16,6 +16,9 @@ return [
         ]
     ],
     'someOtherData' => [ 42, 37, 73],
+
+
+
     'navbarElements' => [
         [ 'text' => "Characters" ],
         [ 'text' => "Comics" ],
@@ -28,5 +31,27 @@ return [
         [ 'text' => "News" ],
         [ 'text' => "Shop" ]
 
+    ],
+    'infoList' => [
+        [
+            'img' => "resources/img/buy-comics-digital-comics.png",
+            'text' => "Digital Comics"
+        ],
+        [
+            'img' => "/resources/img/buy-comics-merchandise.png",
+            'text' => "DC Merchandise"
+        ],
+        [
+            'img' => "/resources/img/buy-comics-subscriptions.png",
+            'text' => "Subscription"
+        ],
+        [
+            'img' => "/resources/img/buy-comics-shop-locator.png",
+            'text' => "Comic Shop Locator"
+        ],
+        [
+            'img' => "/resources/img/buy-dc-power-visa.svg",
+            'text' => "DC Power Visa"
+        ]
     ]
 ];
