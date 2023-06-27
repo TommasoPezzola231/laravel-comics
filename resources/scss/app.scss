@@ -2,27 +2,36 @@
 @import "~bootstrap/scss/bootstrap";
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
+.customBox {
+    width: 1250px;
+    margin: 0 auto;
 }
 
-body {
-    background-color: #222;
-    color: white;
-}
+header {
+    height: 120px;
+    
+    img {
+        height: 80px;
+    }
+    
+    li {
+        &:hover {
+            color: blue;
+            cursor: pointer;
+        }
+    }
 
-header,
-footer {
-    width: 100%;
-    background: #EEE;
-    color: black;
-}
+    input{
+        border: none;
+        border-bottom: 2px solid blue;
 
-header img.logo {
-    height: 2rem;
+        &:focus-visible{
+            outline: none;
+        }
+    }
 }

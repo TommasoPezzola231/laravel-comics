@@ -16,4 +16,17 @@ return [
         ]
     ],
     'someOtherData' => [ 42, 37, 73],
+    'navbarElements' => [
+        [ 'text' => "Characters" ],
+        [ 'text' => "Comics" ],
+        [ 'text' => "Movies" ],
+        [ 'text' => "Tv" ],
+        [ 'text' => "Games" ],
+        [ 'text' => "Collectibles" ],
+        [ 'text' => "Videos" ],
+        [ 'text' => "Fans" ],
+        [ 'text' => "News" ],
+        [ 'text' => "Shop" ]
+
+    ]
 ];
